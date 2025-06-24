@@ -1,0 +1,10 @@
+composer create-project laravel/laravel mylaravelproject
+cd project-name
+php artisan serve
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan make:model Album --migration
+php artisan migrate
+
+php artisan make:controller AdminController 
